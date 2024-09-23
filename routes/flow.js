@@ -78,7 +78,7 @@ router.post('/createSubscription', async (req, res) => {
       invoiceId: invoiceId
     });
 
-    console.log('Respuesta de creación de factura:', responseInvoice);
+    console.log('Respuesta de creación de factura:', responseInvoice.paymentLink);
    
 
      res.json({
